@@ -1,0 +1,132 @@
+:root {
+  --editor-width: 80%;
+  --gap-between-both: 1%;
+  --tables-details-width: calc(
+    100% - var(--gap-between-both) - var(--editor-width)
+  );
+}
+
+.bs-icon {
+  --bs-icon-size: 0.75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+
+#output-table-container {
+  padding-top: 1%;
+  height: 100%;
+}
+
+#output-header > div {
+  padding: 1vh 0.5vw;
+}
+
+#editor-parent-row > div {
+  padding: 0 0 1vh 0;
+}
+
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
+
+#editing-textarea {
+  border: none !important;
+  width: 100%;
+  height: 50vh;
+}
+
+.sql-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#textarea-parent-col {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+#tables-details-section {
+  width: var(--tables-details-width);
+  height: 100%;
+}
+
+#editor-output-section {
+  width: var(--editor-width);
+  height: 100%;
+}
+
+.db-tables-col {
+  max-height: 45vw !important;
+  overflow-y: auto !important;
+}
+
+.db-table-group {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.db-tables > li:first-of-type {
+  list-style-type: "᎒᎒᎒  ";
+}
+
+.db-tables > li:not(:first-of-type) {
+  list-style-type: "↳  ";
+}
+
+.type {
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+}
+
+.key::after {
+  content: " 🔑";
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
+
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
+
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.2);
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: 0.5rem;
+}
+
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
